@@ -34,16 +34,26 @@
         height: auto;
         border-radius: 5px;
     }
+    #buscador{
+        width: 400px;
+        padding: 8px;
+        font-size: 16px;
+        border-radius: 8xp;
+        border: 1px solid #aaa;
+    }
     </style>
 <body>
-    <h1>unofficial webpage</h1> 
-    <h6>this is only a test</h6>
+    <header>
+        <h1>unofficial webpage</h1> 
+        <h6>this is only a test</h6>
 
-        <h3>directo desde <a href="https://discogs.com/user/passthis0n_" target="_blank">discogs</a></h3>
-
-            <h3>Colección CD y Vinilos</h3>
-            <table>
-                <thead>
+        <h4>directo desde <a href="https://discogs.com/user/passthis0n_" target="_blank">discogs</a></h4>
+        <h2>Colección CD y Vinilos</h2>
+        <input type="text" id="buscador" placeholder="Buscar por álbum, artista, formato o país de origen.">
+    </header>
+        <main>
+            <table id="tablaAlbumes">
+                <tr>
                     <th>📷 COVER ART</th>
                     <th>🎹 TITLE</th>
                     <th>🎤 ARTIST</th>
@@ -52,8 +62,8 @@
                     <th>💽 FORMAT</th>
                     <th>🌐 MADE IN</th>
                     <th>📻 SPOTIFY</th>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://dojiw2m9tvv09.cloudfront.net/41657/product/30596346143.jpg"></td>
                     <td>Mutant</td>
                     <td>Arca</td>
@@ -62,8 +72,8 @@
                     <td>CD, Album, Reissue (2017)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3fwSyVNEGlsbX9B1M26hAl?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Arca_-_Arca.jpg"></td>
                     <td>Arca</td>
                     <td>Arca</td>
@@ -72,8 +82,8 @@
                     <td>CD, Album (2017)</td>
                     <td>United Kingdom</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3BJqKT6NBFj06k5LIvjiZb?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://static.wikia.nocookie.net/arca1000000/images/3/35/KiCk_i_%28physical_cover%29.jpeg/revision/latest/scale-to-width-down/250?cb=20211124131623"></td>
                     <td>KiCk i</td>
                     <td>Arca</td>
@@ -82,8 +92,8 @@
                     <td>CD, Album (2020)</td>
                     <td>USA</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6fumIfDEAppI5NCGHQEBSr?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://static.wikia.nocookie.net/arca1000000/images/3/35/KiCk_i_%28physical_cover%29.jpeg/revision/latest/scale-to-width-down/250?cb=20211124131623"></td>
                     <td>KiCk i</td>
                     <td>Arca</td>
@@ -92,8 +102,8 @@
                     <td>Vinilo, Album (2020)</td>
                     <td>USA</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6fumIfDEAppI5NCGHQEBSr?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/8/83/Arca_-_KicK_iii_%28official_studio_album_cover%29.jpg"></td>
                     <td>KicK iii</td>
                     <td>Arca</td>
@@ -102,8 +112,8 @@
                     <td>Vinilo, Album (2022)</td>
                     <td>USA</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/1paea7BPqUpZksvNkQ2cqQ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Ariana_Grande_-_Yours_Truly.png"></td>
                     <td>Yours Truly</td>
                     <td>Ariana Grande</td>
@@ -112,8 +122,8 @@
                     <td>CD, Album (2013)</td>
                     <td>USA</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6czdbbMtGbAkZ6ud2OMTcg?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Ariana_Grande_-_Yours_Truly.png"></td>
                     <td>Yours Truly</td>
                     <td>Ariana Grande</td>
@@ -122,8 +132,8 @@
                     <td>Vinilo, Album, Reissue (2019)</td>
                     <td>USA</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6czdbbMtGbAkZ6ud2OMTcg?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/HeadstrongAshleyTisdaleHQ.jpg/250px-HeadstrongAshleyTisdaleHQ.jpg"></td>
                     <td>Headstrong</td>
                     <td>Ashley Tisdale</td>
@@ -132,8 +142,8 @@
                     <td>CD, Album (2007)</td>
                     <td>Argentina</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/18Cdeub4WBPKku92zlsfWp?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/0/07/Under_My_Skin_%28Avril_Lavigne_album%29_cover.png"></td>
                     <td>Under My Skin</td>
                     <td>Avril Lavigne</td>
@@ -142,8 +152,8 @@
                     <td>CD, Album (2004)</td>
                     <td>Argentina</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/7851Vsjv3apS52sXUik6iF?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Azealia_Banks_-_Broke_With_Expensive_Taste_album_cover_2014.png"></td>
                     <td>Broke With Expensive Taste</td>
                     <td>Azealia Banks</td>
@@ -152,8 +162,8 @@
                     <td>CD, Album (2015)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6hORzuqVAquk6Szm1NRoRt?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/9/96/I_Am..._Sasha_Fierce.png"></td>
                     <td>I Am... Sasha Fierce</td>
                     <td>Beyoncé</td>
@@ -162,8 +172,8 @@
                     <td>2CD, Album (2008)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/20E3PwDg1jaDdK9K565luD?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/c/ca/Beyonc%C3%A9_-_4.png"></td>
                     <td>4</td>
                     <td>Beyoncé</td>
@@ -172,8 +182,8 @@
                     <td>CD, Album (2011)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/1gIC63gC3B7o7FfpPACZQJ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/7/77/Bj%C3%B6rk-Debut-1993.png"></td>
                     <td>Debut</td>
                     <td>Björk</td>
@@ -182,8 +192,8 @@
                     <td>CD, Album</td>
                     <td>England</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/7qopDhMKBIfoIM2gJcecbr?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Human_Behaviour_%28Single_Artwork%29.png"></td>
                     <td>Human Behaviour</td>
                     <td>Björk</td>
@@ -192,8 +202,8 @@
                     <td>CD, Single (1993)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/2PQNhcghIhegu50hTAPUmp?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Bj%C3%B6rk_-_Play_Dead.png"></td>
                     <td>Play Dead</td>
                     <td>Björk</td>
@@ -202,8 +212,8 @@
                     <td>CD, Maxi Single (1993)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/7204VGDwNIF4yKgUChWE2R?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/9/93/Bj%C3%B6rk_-_Big_Time_Sensuality.png"></td>
                     <td>Big Time Sensuality</td>
                     <td>Björk</td>
@@ -212,8 +222,8 @@
                     <td>CD, Single (1993)</td>
                     <td>United Kingdom</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/4uHvvPC6FszuJSaW5tHyjc?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/7/75/The_Best_Mixes_from_the_Album_Debut_for_All_the_People_Who_Don%27t_Buy_White_Labels.png"></td>
                     <td>The Best Mixes from the Album-Debut for All the People Who Don't Buy White-Labels</td>
                     <td>Björk</td>
@@ -222,8 +232,8 @@
                     <td>CD, Compilation (1994)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/5tXGUmCUQnBT3x6HKMv2Nj?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Bjork_Post.png"></td>
                     <td>Post</td>
                     <td>Björk</td>
@@ -232,8 +242,8 @@
                     <td>CD, Album (1995)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/2lYwBB5l7GqgyHFTHz0Itd?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Bjork_Post.png"></td>
                     <td>Post</td>
                     <td>Björk</td>
@@ -242,8 +252,8 @@
                     <td>CD, Album, Limited Edition (1995)</td>
                     <td>United Kingdom</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/2lYwBB5l7GqgyHFTHz0Itd?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/0/07/Bj%C3%B6rk_-_Army_of_Me.png"></td>
                     <td>Army of Me (Army of Love)</td>
                     <td>Björk</td>
@@ -252,8 +262,8 @@
                     <td>CD, Single, Misprint (1995)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0yaoVWBGXLr14Gm4A1bCHC?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/7/73/Bj%C3%B6rk_-_Hyperballad.png"></td>
                     <td>Hyper-Ballad</td>
                     <td>Björk</td>
@@ -262,8 +272,8 @@
                     <td>CD, Single (1996)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/7iQMtcI1EufeTDdl6y9WNO?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/3/32/Bjork_telegram.png"></td>
                     <td>Telegram</td>
                     <td>Björk</td>
@@ -272,8 +282,8 @@
                     <td>CD, Compilation (2016)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/78xd0xuLlrTcD46a3EBTev?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/a/af/Bj%C3%B6rk_-_Homogenic.png"></td>
                     <td>Homogenic</td>
                     <td>Björk</td>
@@ -282,8 +292,8 @@
                     <td>CD, Album (1997)</td>
                     <td>Brazil</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0h19Ty9F2Ma8pKkRdx17UT?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/a/af/Bj%C3%B6rk_-_Homogenic.png"></td>
                     <td>Homogenic</td>
                     <td>Björk</td>
@@ -292,8 +302,8 @@
                     <td>CD, Album (1997)</td>
                     <td>United Kingdom</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0h19Ty9F2Ma8pKkRdx17UT?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>    
-                <thead>
+                </tr>    
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/a/af/Bj%C3%B6rk_-_Homogenic.png"></td>
                     <td>Homogenic</td>
                     <td>Björk</td>
@@ -302,8 +312,8 @@
                     <td>CD, Album, Limited Edition (1997)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0h19Ty9F2Ma8pKkRdx17UT?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>    
-                <thead>
+                </tr>    
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/a/af/Bj%C3%B6rk_-_Homogenic.png"></td>
                     <td>Homogenic</td>
                     <td>Björk</td>
@@ -312,8 +322,8 @@
                     <td>CD, Album, Limited Edition (1997)</td>
                     <td>Japan</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0h19Ty9F2Ma8pKkRdx17UT?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>    
-                <thead>
+                </tr>    
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/a/af/Bj%C3%B6rk_-_Homogenic.png"></td>
                     <td>Homogenic</td>
                     <td>Björk</td>
@@ -322,8 +332,8 @@
                     <td>Vinilo, Album, Reissue</td>
                     <td>United Kingdom</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0h19Ty9F2Ma8pKkRdx17UT?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>    
-                <thead>
+                </tr>    
+                <tr>
                     <td><img src="https://i.discogs.com/LyLQmRqanIwtctRJV5U14LDATnDssYBrWlu3eZvodF0/rs:fit/g:sm/q:90/h:549/w:555/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzQ0/MjktMTIwOTUwNDEy/OS5qcGVn.jpeg"></td>
                     <td>Jóga</td>
                     <td>Björk</td>
@@ -332,8 +342,8 @@
                     <td>CD, Single, Card Sleeve (1997)</td>
                     <td>Australasia</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/2TfdPRiYHix1waLugKDvIc?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>    
-                <thead>
+                </tr>    
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/5/50/Bj%C3%B6rk_-_Bachelorette.png"></td>
                     <td>Bachelorette</td>
                     <td>Björk</td>
@@ -342,8 +352,8 @@
                     <td>CD, Single (1997)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/39Fb88UfdYfcWayWsMgfmb?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>
-                <thead>
+                </tr>
+                <tr>
                     <td><img src="https://i.discogs.com/z7aV0bRw-0SWPIOYnGaVIM4-CSt65_t3G9qQLWNxl38/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NjI3/OTctMTI2NzExMTUz/MC5qcGVn.jpeg"></td>
                     <td>Bachelorette</td>
                     <td>Björk</td>
@@ -352,8 +362,8 @@
                     <td>CD, Single, CD3 (1997)</td>
                     <td>United Kingdom</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/295T3DWSzZ2XpLIfbJtxQi?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/7/76/Homogenic_Live_CD_cover.jpg"></td>
                     <td>Homogenic Live</td>
                     <td>Björk</td>
@@ -362,8 +372,8 @@
                     <td>CD, Live Album</td>
                     <td>United Kingdom</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/5rmvns8txMB2FNp2g13bIH?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/1/14/Bj%C3%B6rk_-_Vespertine_album_cover.png"></td>
                     <td>Vespertine</td>
                     <td>Björk</td>
@@ -372,8 +382,8 @@
                     <td>CD, Album (2001)</td>
                     <td>Europa</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/7sScYIMy44GyOll7TpWcak?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Hidden_Place.jpg"></td>
                     <td>Hidden Place</td>
                     <td>Björk</td>
@@ -382,8 +392,8 @@
                     <td>CD, Single, CD1 (2001)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3Hi1M2nYGkn0P9qHc00uls?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/e/e7/Bj%C3%B6rk_-_Greatest_Hits.png"></td>
                     <td>Greatest Hits</td>
                     <td>Björk</td>
@@ -392,8 +402,8 @@
                     <td>CD, Compilation (2007)</td>
                     <td>Argentina</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/04xnEWQgojFB2It1mXwel1?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://i.discogs.com/0hdgx16VRkVfs0K7Si9mUsAp0YXpHn-D8AiRP9mqfNY/rs:fit/g:sm/q:90/h:550/w:411/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNDkz/NjEtMTMxMzM0MjUw/Ny5qcGVn.jpeg"></td>
                     <td>Greatest Hits</td>
                     <td>Björk</td>
@@ -402,8 +412,8 @@
                     <td>DVD, Compilation (2004)</td>
                     <td>Argentina</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/04xnEWQgojFB2It1mXwel1?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/e/e7/Bj%C3%B6rk_-_Greatest_Hits.png"></td>
                     <td>Greatest Hits</td>
                     <td>Björk</td>
@@ -412,8 +422,8 @@
                     <td>2LP Vinilo, Compilation (2021)</td>
                     <td>United Kingdom, Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/04xnEWQgojFB2It1mXwel1?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>    
-                <thead>
+                </tr>    
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/6/6d/Medulla.png"></td>
                     <td>Medúlla</td>
                     <td>Björk</td>
@@ -422,8 +432,8 @@
                     <td>CD, Album (2005)</td>
                     <td>Argentina</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/1OBctVHKbHrQ2t5oCeHNtN?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://i.discogs.com/qRELkjnarknbYh2AVoVS4WZZKZq5AE31ildGRCymsQY/rs:fit/g:sm/q:90/h:538/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNjIz/OC0xMjE2NjcyOTI3/LmpwZWc.jpeg"></td>
                     <td>Triumph Of a Heart</td>
                     <td>Björk</td>
@@ -432,8 +442,8 @@
                     <td>DVD, Single (2005)</td>
                     <td>United Kingdom</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/1IEfFohpBDU3Akdfsew1an?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/c/c6/The_Music_from_Matthew_Barney%27s_Drawing_Restraint_9.png"></td>
                     <td>The Music From Matthew Barney's Drawing Restraint 9</td>
                     <td>Björk</td>
@@ -442,8 +452,8 @@
                     <td>CD, Album (2005)</td>
                     <td>Argentina</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/59s7zmoWUN463O3UqJvuRr?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/e/e3/Bjorkvolta.png"></td>
                     <td>Volta</td>
                     <td>Björk</td>
@@ -452,8 +462,8 @@
                     <td>CD, Album (2007)</td>
                     <td>United Kingdom</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/7GPUv9pYrpvNMtupwuNh9x?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/e/e3/Bjorkvolta.png"></td>
                     <td>Volta</td>
                     <td>Björk</td>
@@ -462,8 +472,8 @@
                     <td>2LP Vinilo, Album, Reissue (2015)</td>
                     <td>United Kingdom</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/7GPUv9pYrpvNMtupwuNh9x?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/e/ed/Bjork_-_Voltaic.jpg"></td>
                     <td>Voltaïc</td>
                     <td>Björk</td>
@@ -472,8 +482,8 @@
                     <td>2CD x 2DVD, Live Album (2009)</td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/7jdHPLmNW38NMUTvPWoT7I?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Bjork_-_Biophilia_cover.png"></td>
                     <td>Biophilia</td>
                     <td>Björk</td>
@@ -482,8 +492,8 @@
                     <td>CD, Deluxe Edition, Album</td>
                     <td>United Kingdom</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/062TYNQMITUlaz9CiTfLxn?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </r>  
+                <tr>
                     <td><img src="https://i.discogs.com/zaHRfWEyU8K408H2gaW8y5aFQhtrnWxS6UYKeZMCysU/rs:fit/g:sm/q:90/h:533/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzOTI0/MjQtMTQxODIzMzQ3/MC0yMjkzLmpwZWc.jpeg"></td>
                     <td>Biophilia Live</td>
                     <td>Björk</td>
@@ -492,8 +502,8 @@
                     <td>2CD, DVD, Live Album (2014)</td>
                     <td>USA</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/1BXUufplM3OhJ9m7MD6KPu?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/0/01/Bj%C3%B6rk_bastards_cover.jpeg"></td>
                     <td>Bastards</td>
                     <td>Björk</td>
@@ -502,8 +512,8 @@
                     <td>CD, Compilation (2013)</td>
                     <td>Argentina</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3KOU8rmLKgULTogBAz1px4?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/a/ab/Vulnicura_%28deluxe_cd%29.png"></td>
                     <td>Vulnicura</td>
                     <td>Björk</td>
@@ -512,8 +522,8 @@
                     <td>CD, Album, Deluxe Edition</td>
                     <td>USA</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3OEeigyzeq8B1KexshYRwC?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead> 
-                <thead>
+                </tr> 
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/a/ab/Vulnicura_%28deluxe_cd%29.png"></td>
                     <td>Vulnicura</td>
                     <td>Björk</td>
@@ -521,19 +531,19 @@
                     <td>Electronic, Avant-garde</td>
                     <td>2LP Vinilo, Album, Deluxe Edition</td>
                     <td>United Kingdom</td>
-                    <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3OEeigyzeq8B1KexshYRwC?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
-                    <td><img src="/assets/"></td>
+                    <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3OEeigyzeq8B1KexshYRwC?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+                </tr>  
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Vulnicura_Live_%28Commercial_Release%29.jpg"></td>
                     <td>Vulnicura Live</td>
                     <td>Björk</td>
                     <td>15/07/2016</td>
                     <td>Electronic, Avant-garde</td>
                     <td>CD, Live Album</td>
                     <td>Argentina</td>
-                    <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6oDAewG3ssllJOnD07uHj9?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                    <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6oDAewG3ssllJOnD07uHj9?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/2/2c/Bj%C3%B6rk_-_Utopia_album_cover.png"></td>
                     <td>Utopia</td>
                     <td>Björk</td>
@@ -542,8 +552,8 @@
                     <td>CD, Album, Special Edition (2017) </td>
                     <td>Europe</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0lCGnNzATPLJ0esTn8FrNs?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/b/b6/Fossora.png"></td>
                     <td>Fossora</td>
                     <td>Björk</td>
@@ -552,8 +562,8 @@
                     <td>CD, Album, Limited Edition (Reissue 2022)</td>
                     <td>International</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6ZY51GqMbhN0Xlc91bNGX9?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/en/b/b6/Fossora.png"></td>
                     <td>Fossora</td>
                     <td>Björk</td>
@@ -562,8 +572,8 @@
                     <td>2LP Vinilo, Album (2022)</td>
                     <td>International</td>
                     <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6ZY51GqMbhN0Xlc91bNGX9?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </thead>  
-                <thead>
+                </tr>  
+                <tr>
                     <td><img src="/assets/"></td>
                     <td></td>
                     <td></td>
@@ -572,7 +582,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                </thead>                     
+                </tr>                     
 
 
 
@@ -588,6 +598,24 @@
 
 
             </table>
+        </main>
+
+        <script>
+            document.getElementById("buscador").addEventListener("keyup", function(){
+                let input = this.value.toLowerCase();
+                let filas = document.querySelectorAll("#tablaAlbumes tr");
+
+                for (let i=1; i < filas.length; i++){
+                    let textoFila = filas[i].innerText.toLowerCase();
+
+                    if (textoFila.includes(input)){
+                        filas[i].style.display="";
+                    } else {
+                        filas[i].style.display = "none";
+                    }
+                }
+            });
+        </script>
 
 
 
