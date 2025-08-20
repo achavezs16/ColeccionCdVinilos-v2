@@ -9,20 +9,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fafafa;
     padding: 20px;
-}
-
-.subtitulo{
-    color: #333; 
-}
-.album{
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    background-color: white;
+    color: #333;
 }
 table{
     border-collapse: collapse;
@@ -35,14 +22,6 @@ td, th{
     padding: 8px;
     max-width: 260px;
 }
-tr:nth-child(even){
-    background-color: #f9f9f9;
-}
-img{
-    max-width: 100px;
-    height: auto;
-    border-radius: 5px;
-}
 #buscador{
     width: 400px;
     padding: 8px;
@@ -52,7 +31,7 @@ img{
 }
 .contenido {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* dos columnas: izq texto, der galería */
+    grid-template-columns: 1fr 1fr; 
     gap: 20px;
     align-items: start;
 }
@@ -67,4 +46,9 @@ img{
     max-width: none;   
     width: 100%;
     border-radius: 8px;
+}
+.tablaAlbumes img{
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
 }
