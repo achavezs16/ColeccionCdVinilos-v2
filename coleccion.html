@@ -12,10 +12,11 @@
         <h6>this is only a test</h6>
     </header>
     <main>
-        <div class="subtitulo">
-            <h4>directo desde <a href="https://discogs.com/user/passthis0n_" target="_blank">discogs</a></h4>
+        <div class="subtitulo" style="align-items: center; display: flex; justify-content: space-between;" >
             <h2>Colección CD y Vinilos</h2>
             <input type="text" id="buscador" placeholder="Buscar por álbum, artista, formato o país de origen.">
+            <h4>directo desde <a href="https://discogs.com/user/passthis0n_" target="_blank">discogs</a></h4>
+            <h4 style="text-align: right;"><a href="index.html">Volver a inicio</a></h4>
         </div>
                 <div class="tablaAlbumes">
                     <table id="tablaAlbumes">
@@ -568,6 +569,11 @@
        
 
     </main>
+
+    <footer>
+        <h6 style="text-align: center;">IG: @passthis0n_</h6>
+    </footer>
+
     <script>
         document.getElementById("buscador").addEventListener("keyup", function(){
         let input = this.value.toLowerCase();
